@@ -27,8 +27,10 @@ extern "C"{
 typedef enum {
     SUCCESS          = 0,  // Success return value - no error occurred
     FAILURE          = -1, // A generic error. Not enough information for a specific error code
-    NULL_VALUE_ERROR = -2  // A required parameter was passed as null
-}Airtouch_Error_t;
+    NULL_VALUE_ERROR = -2,  // A required parameter was passed as null
+    ERROR_SMNT_SSID_LENGTH = -3, // Smartconfig result SSID Length was passed as error
+    ERROR_SMNT_PSWD_LENGTH = -4
+}AirtouchError_t;
 
 #ifdef __cplusplus
 }
